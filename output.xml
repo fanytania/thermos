@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.6 on win32)" generated="2024-06-06T08:10:16.396703" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\USER\Downloads\Thermos\test.robot">
+<test id="s1-t1" name="Open Browser, Click Login, and Click Register" line="25">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:10:16.850732" level="INFO">Opening browser 'chrome' to base url 'https://thermos.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-06T08:10:16.850732" elapsed="7.271955"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-06T08:10:24.122687" elapsed="0.141376"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
+<arg>${TIMEOUT}</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-06-06T08:10:24.264063" elapsed="0.003493"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGIN_BUTTON_XPATH}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-06T08:10:24.267556" elapsed="0.073300"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:10:24.340856" level="INFO">Clicking element '//*[@id="SiteHeader"]/div/div/div[5]/div/div/a[2]'.</msg>
+<arg>${LOGIN_BUTTON_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:10:24.340856" elapsed="5.315166"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${REGISTER_LINK_XPATH}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-06T08:10:29.664019" elapsed="0.083467"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:10:29.747486" level="INFO">Clicking element '//*[@id="customer_register_link"]'.</msg>
+<arg>${REGISTER_LINK_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:10:29.747486" elapsed="6.142248"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${FIRST_NAME_XPATH}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-06T08:10:35.889734" elapsed="0.082286"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:10:35.972020" level="INFO">Typing text 'Fany Tania' into text field '//*[@id="FirstName"]'.</msg>
+<arg>${FIRST_NAME_XPATH}</arg>
+<arg>${FIRST_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:10:35.972020" elapsed="0.099343"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMAIL_XPATH}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-06T08:10:36.079366" elapsed="0.024006"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:10:36.103372" level="INFO">Typing text 'testing123@gmail.com' into text field '//*[@id="Email"]'.</msg>
+<arg>${EMAIL_XPATH}</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:10:36.103372" elapsed="0.216053"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PHONE_XPATH}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-06T08:10:36.319425" elapsed="0.061399"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:10:36.380824" level="INFO">Typing text '081234567890' into text field '//*[@id="Phone"]'.</msg>
+<arg>${PHONE_XPATH}</arg>
+<arg>${PHONE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:10:36.380824" elapsed="0.271503"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CREATE_PASSWORD_XPATH}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-06T08:10:36.652327" elapsed="0.036013"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:10:36.688340" level="INFO">Typing text 'Testing123' into text field '//*[@name="customer[password]"]'.</msg>
+<arg>${CREATE_PASSWORD_XPATH}</arg>
+<arg>${CREATE_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:10:36.688340" elapsed="0.176320"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CONFIRM_PASSWORD_XPATH}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-06T08:10:36.864660" elapsed="0.037646"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:10:36.902306" level="INFO">Typing text 'Testing123' into text field '//*[@name="customer[password_confirmation]"]'.</msg>
+<arg>${CONFIRM_PASSWORD_XPATH}</arg>
+<arg>${CONFIRM_PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:10:36.902306" elapsed="0.254852"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CREATE_ACCOUNT_BUTTON_XPATH}</arg>
+<arg>${TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-06T08:10:37.157158" elapsed="0.039049"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-06T08:10:37.196207" level="INFO">Clicking element '//*[@id="create_customer"]/div/button'.</msg>
+<arg>${CREATE_ACCOUNT_BUTTON_XPATH}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-06T08:10:37.196207" elapsed="5.174477"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-06T08:10:52.380828" level="INFO">Slept 10 seconds.</msg>
+<arg>${WAIT_TIME}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-06T08:10:42.370684" elapsed="10.010144"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-06T08:10:52.381501" elapsed="2.320011"/>
+</kw>
+<doc>Membuka browser, mengakses halaman utama Thermos, mengklik tombol login, dan mengklik link register</doc>
+<status status="PASS" start="2024-06-06T08:10:16.850732" elapsed="37.850780"/>
+</test>
+<doc>Skrip Pengujian Registrasi untuk https://thermos.com/</doc>
+<status status="PASS" start="2024-06-06T08:10:16.397851" elapsed="38.303661"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
